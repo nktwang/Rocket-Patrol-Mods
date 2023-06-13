@@ -10,6 +10,8 @@ class Play extends Phaser.Scene {
         this.load.image('starfield', './assets/starfield.png');
         // load spritesheet
         this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
+        // load bgm
+        this.load.audio('EXCITE by Noctis Wang', 'EXCITE by Noctis Wang.mp3')
     }
 
     create() {
@@ -48,6 +50,10 @@ class Play extends Phaser.Scene {
             }),
             frameRate: 30
         });
+
+        //add background music
+        this.bgmPlay = this.sound.add('EXCITE by Noctis Wang', { loop: true });
+        this.bgmPlay.play();
 
         // initialize score
         this.p1Score = 0;
