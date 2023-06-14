@@ -2,6 +2,9 @@
 //Rocket Patrol Mods
 //1h30m
 //Track a high score that persists across scenes and display it in the UI (5)
+//Add your own (copyright-free) background music to the Play scene (please be mindful of the volume) (5)
+//Allow the player to control the Rocket after it's fired (5)
+//Create a new scrolling tile sprite for the background (5)
 //user3289402, et al. “Create a High Score in Phaser.” Stack Overflow, 1 Feb. 1963, https://stackoverflow.com/questions/37408825/create-a-high-score-in-phaser. 
 
 let config = {
