@@ -11,7 +11,7 @@ class Play extends Phaser.Scene {
         // load spritesheet
         this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
         // load bgm
-        this.load.audio('EXCITE by Noctis Wang', 'EXCITE by Noctis Wang.mp3')
+        this.load.audio('bgmPlay', './assets/bgmPlay.mp3')
     }
 
     create() {
@@ -52,7 +52,7 @@ class Play extends Phaser.Scene {
         });
 
         //add background music
-        this.bgmPlay = this.sound.add('EXCITE by Noctis Wang', { loop: true });
+        this.bgmPlay = this.sound.add('bgmPlay', { loop: true });
         this.bgmPlay.play();
 
         // initialize score
